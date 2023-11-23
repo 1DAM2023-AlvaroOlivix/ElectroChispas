@@ -1,13 +1,14 @@
 public class Societies extends Customer{
-    private String cif;
-    public String getCif() {
-        return cif;
+    private String companyName;
+
+    public String getCompanyName() {
+        return companyName;
     }
 
-    public void setCif(String cif) {
-        this.cif = cif;
+    public void setCompanyName(String companyName) {
+        this.companyName = companyName;
     }
-    }
+}
 
 
 
