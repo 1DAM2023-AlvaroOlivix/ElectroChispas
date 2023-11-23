@@ -59,7 +59,7 @@ public class Main {
         service.setBrand("EkonomicasSL");
         service.setPrice("1400.00");
         service.setIvaType("21%");
-//Service1: Service.
+//Service1: Service..
         Service service1 = new Service();
         service1.setCodeS("11111B");
         service1.setName("Reparación de Muro");
