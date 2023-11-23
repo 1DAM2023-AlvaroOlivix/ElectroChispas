@@ -52,7 +52,7 @@ public class Main {
         products1.setPrice("70.00");
         products1.setIvaType("4%");
 
-        //Service: Service
+        //Service: Service.
         Service service = new Service();
         service.setCodeS("11111A");
         service.setName("Instalación de Placas Solares");
