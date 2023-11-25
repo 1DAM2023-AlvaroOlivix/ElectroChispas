@@ -1,12 +1,14 @@
 public class Products extends Sells{
-    private String codeP;
+
     private String model;
-    public String getCodeP() {
-        return codeP;
+    private String brand;
+
+    public String getBrand() {
+        return brand;
     }
 
-    public void setCodeP(String codeP) {
-        this.codeP = codeP;
+    public void setBrand(String brand) {
+        this.brand = brand;
     }
 
     public String getModel() {

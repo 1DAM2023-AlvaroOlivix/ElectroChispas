@@ -1,14 +1,11 @@
-public class Service extends Sells{
-    private String codeS;
+public class Service extends Sells {
+    private String hoursWorked;
 
-
-
-    public String getCodeS() {
-        return codeS;
+    public String getHoursWorked() {
+        return hoursWorked;
     }
 
-    public void setCodeS(String codeS) {
-        this.codeS = codeS;
+    public void setHoursWorked(String hoursWorked) {
+        this.hoursWorked = hoursWorked;
     }
-
 }

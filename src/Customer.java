@@ -1,3 +1,5 @@
+import java.lang.reflect.Type;
+
 public class Customer {
     private String code;
     private String name;
@@ -6,6 +8,8 @@ public class Customer {
     private String province;
     private String email;
     private String phoneNumber;
+
+
 
     public String getCode() {
         return code;

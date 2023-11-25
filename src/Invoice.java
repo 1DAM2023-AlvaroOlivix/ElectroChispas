@@ -1,5 +1,6 @@
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Date;
 
 public class Invoice {
     private String code;
@@ -7,45 +8,22 @@ public class Invoice {
     private String taskBase;
     private String total;
     private Customer customer;
-    private ArrayList<Products> products;
-    private ArrayList<Service> services;
-
+    private ArrayList<Sells> sellsList=new ArrayList<>();
     public Customer getCustomer() {
         return customer;
     }
-
     public void setCustomer(Customer customer) {
         this.customer = customer;
     }
-
-    public ArrayList<Products> getProducts() {
-        return products;
-    }
-
-    public void setProducts(ArrayList<Products> products) {
-        this.products = products;
-    }
-
-    public ArrayList<Service> getServices() {
-        return services;
-    }
-
-    public void setServices(ArrayList<Service> services) {
-        this.services = services;
-    }
-
     public String getCode() {
         return code;
     }
-
     public void setCode(String code) {
         this.code = code;
     }
-
     public String getInvoiceDate() {
         return invoiceDate;
     }
-
     public void setInvoiceDate(String invoiceDate) {
         this.invoiceDate = invoiceDate;
     }
@@ -54,7 +32,9 @@ public class Invoice {
         return taskBase;
     }
 
-    public void setTaskBase(String taskBase) {this.taskBase = taskBase;}
+    public void setTaskBase(String taskBase) {
+        this.taskBase = taskBase;
+    }
 
     public String getTotal() {
         return total;
@@ -63,4 +43,19 @@ public class Invoice {
     public void setTotal(String total) {
         this.total = total;
     }
+
+    public ArrayList<Sells> getSellsList() {
+        return sellsList;
+    }
+
+    public void setSellsList(ArrayList<Sells> sellsList) {
+        this.sellsList = sellsList;
+    }
+    public void addSells(Sells sells){
+        sellsList.add(sells);
+    }
+    public Sells getSells(int position){
+        return sellsList.get(position);
+    }
+
 }

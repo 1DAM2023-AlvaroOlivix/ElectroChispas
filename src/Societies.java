@@ -1,6 +1,7 @@
 public class Societies extends Customer{
     private String companyName;
 
+
     public String getCompanyName() {
         return companyName;
     }

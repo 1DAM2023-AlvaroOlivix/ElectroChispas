@@ -1,9 +1,8 @@
 public class Sells {
+    private String code;
     private String name;
+    private String iva;
     private String price;
-    private String ivaType;
-    private String brand;
-
 
     public String getName() {
         return name;
@@ -11,6 +10,14 @@ public class Sells {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 
     public String getPrice() {
@@ -21,20 +28,13 @@ public class Sells {
         this.price = price;
     }
 
-    public String getIvaType() {
-        return ivaType;
+    public String getIva() {
+        return iva;
     }
 
-    public void setIvaType(String ivaType) {
-        this.ivaType = ivaType;
+    public void setIva(String iva) {
+        this.iva = iva;
     }
 
-    public String getBrand() {
-        return brand;
-    }
 
-    public void setBrand(String brand) {
-        this.brand = brand;
-    }
 }
-
